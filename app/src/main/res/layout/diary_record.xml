@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvw_dateOfEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Date"
+
+        android:textColor="#E91E63" />
+
+    <TextView
+        android:id="@+id/tvw_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvw_dateOfEvent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#673AB7"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvw_subCategory"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/tvw_dateOfEvent"
+        android:layout_toRightOf="@id/tvw_category"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="#009688"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvw_eventDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvw_category"
+        android:textStyle="bold|italic"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/black"
+
+        android:text="TextView" />
+
+
+    <ListView
+
+        android:id="@+id/lvw_attachments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tvw_eventDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:dividerHeight="7dp"
+        android:layout_marginEnd="10dp"
+
+        android:layout_marginBottom="15dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="450dp" />
+
+
+
+
+
+</RelativeLayout>

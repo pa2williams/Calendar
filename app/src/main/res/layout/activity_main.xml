@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="450dp"/>
+
+
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:type="one_day_picker"
+        app:eventsEnabled="true"
+        app:todayLabelColor="@color/purple_200"
+        />
+
+    <ListView
+
+        android:id="@+id/lvw_diary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="450dp"
+        android:dividerHeight="7dp"
+        android:layout_marginEnd="10dp"
+
+        android:layout_marginBottom="15dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+</RelativeLayout>
